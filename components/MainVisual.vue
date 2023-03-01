@@ -5,7 +5,7 @@
         Hello
         <span class="period">.</span>
       </h1>
-      <p>My name is Sou Hirawata.I'm a college student and heres is my portfolio.Have a look.</p>
+      <p>My name is Sou Hirawata.I'm a university student and heres is my portfolio.Have a look.</p>
     </div>
     <div class="visual">
       <img src="~/assets/img/main_visual.jpg" alt="main_visual" />
@@ -23,6 +23,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 #main-visual {
+  margin-top: 10%;
   display: flex;
 
   .message {

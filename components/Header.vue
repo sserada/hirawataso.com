@@ -2,9 +2,9 @@
   <header id="header">
     <ul class="menu">
       <li><nuxt-link to="/">Home</nuxt-link></li>
-      <li><nuxt-link to="/#">About</nuxt-link></li>
-      <li><nuxt-link to="/#">Works</nuxt-link></li>
-      <li><nuxt-link to="/#">Contact</nuxt-link></li>
+      <li><nuxt-link to="/about">About</nuxt-link></li>
+      <li><nuxt-link to="/works">Works</nuxt-link></li>
+      <li><nuxt-link to="/contact">Contact</nuxt-link></li>
     </ul>
   </header>
 </template>

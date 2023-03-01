@@ -57,7 +57,7 @@ export default Vue.extend({
   }
   .profile {
     margin-top: 6%;
-    margin-left: 10%;
+    margin-left: 12%;
     width: 80%;
     display: flex;
 
@@ -74,7 +74,7 @@ export default Vue.extend({
     }
 
     .profile-text {
-      margin-top: 6%;
+      margin-top: 2%;
       h3 {
         font-size: 30px;
         font-weight: 900;
@@ -85,6 +85,7 @@ export default Vue.extend({
         font-size: 15px;
         line-height: 1.2;
         letter-spacing: 0.1em;
+        margin-bottom: 5%;
       }
     }
   }
