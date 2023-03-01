@@ -70,7 +70,8 @@ export default defineComponent({
       }
       p {
         color: #666;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        font-family: 'Playfair Display', serif;
       }
       .btn {
         box-shadow: 0 0 0 0;
