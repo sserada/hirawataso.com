@@ -18,6 +18,7 @@ export default {
   color: #999;
   text-align: right;
   margin-right: 100px;
+  margin-bottom: 20px;
   a {
     color: #999;
     text-decoration: none;

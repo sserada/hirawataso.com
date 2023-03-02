@@ -25,18 +25,24 @@
       </v-col>
     </v-row>
     <History />
+    <Works />
   </v-container>
+  <Footer />
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
 import History from '@/components/History.vue'
+import Footer from '@/components/Footer.vue'
+import Works from '@/components/Works.vue'
 
 export default {
   name: 'About',
   components: {
     Header,
-    History
+    History,
+    Footer,
+    Works
   }
 }
 </script>
@@ -45,7 +51,7 @@ export default {
 .about {
   padding: 100px 100px;
   h1 {
-    font-size: 4.0rem;
+    font-size: 3.4rem;
     font-weight: 700;
     margin-bottom: 40px;
     span {
@@ -55,7 +61,7 @@ export default {
       width: 60px;
       height: 60px;
       border-radius: 50%;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0);
       transition: all 0.3s;
       &:hover {
