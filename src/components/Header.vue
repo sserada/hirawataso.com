@@ -19,6 +19,7 @@ export default {
   left: 0;
   width: 100%;
   height: 70px;
+  z-index: 999;
   color: #fff;
   display: flex;
   align-items: center;

@@ -3,32 +3,40 @@
   <v-container class="about">
     <h1>
       <span>Sou</span> Hirawata
+      <v-btn class="btn github" href="https://github.com/fightingsou" target="_blank">
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
+      <v-btn class="btn twitter" href="https://twitter.com/fightingsou" target="_blank">
+        <v-icon>mdi-twitter</v-icon>
+      </v-btn>
     </h1>
-      <v-row>
-        <v-col sm="3">
-          <img src="@/assets/img/myface.jpg" alt="myface" />
-        </v-col>
-        <v-col sm="9">
-          <p>
-            This is my face 18 years ago. Where has the cuteness of those days gone?
-            <br>
-            I am now a junior at the university.
-            In university, I majored in computer science and am doing research on automatic composition.
-            I also enjoy competitive programming and web development.
-          </p>
-        </v-col>
-      </v-row>
-
+    <v-row>
+      <v-col sm="3">
+        <img src="@/assets/img/myface.jpg" alt="myface" />
+      </v-col>
+      <v-col sm="9">
+        <p>
+          This is my face 18 years ago. Where has the cuteness of those days gone?
+          <br>
+          I am now a junior at the university.
+          In university, I majored in computer science and am doing research on automatic composition.
+          I also enjoy competitive programming and web development.
+        </p>
+      </v-col>
+    </v-row>
+    <History />
   </v-container>
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
+import History from '@/components/History.vue'
 
 export default {
   name: 'About',
   components: {
-    Header
+    Header,
+    History
   }
 }
 </script>
@@ -42,6 +50,24 @@ export default {
     margin-bottom: 40px;
     span {
       color: #ff4081;
+    }
+    .btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+      transition: all 0.3s;
+      &:hover {
+        background-color: #ff4081;
+        color: #fff;
+      }
+      &.github {
+        color: #333;
+      }
+      &.twitter {
+        color: #1da1f2;
+      }
     }
   }
   p {
