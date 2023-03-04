@@ -3,9 +3,9 @@
   <v-container>
     <v-row>
       <v-col>
-        <h1>Hello!<span class="period">.</span></h1>
+        <h1>Hello<span class="period">.</span></h1>
         <p>
-          I'm Sou Hirawata, a university student in Japan.
+          I'm So Hirawata, a university student in Japan.
         </p>
         <p>
           Here is my portfolio site. Have a look around!
@@ -87,6 +87,37 @@ export default defineComponent({
           font-size: 2rem;
           &.mdi-twitter {
             color: #1da1f2;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .v-container {
+    .v-row {
+      flex-direction: column-reverse;
+      position: relative;
+      .v-col {
+        img {
+          position: absolute;
+          top: 70px;
+          width: 350px;
+          height: 350px;
+        }
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1rem;
+          max-width: 250px;
+        }
+        .btn {
+          width: 40px;
+          height: 40px;
+          .v-icon {
+            font-size: 1.5rem;
           }
         }
       }
