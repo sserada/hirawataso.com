@@ -2,7 +2,7 @@
   <Header />
   <v-container class="about">
     <h1>
-      <span>Sou</span> Hirawata
+      <span>So</span> Hirawata
       <v-btn class="btn github" href="https://github.com/fightingsou" target="_blank">
         <v-icon>mdi-github</v-icon>
       </v-btn>
@@ -49,6 +49,7 @@ export default {
 
 <style lang="scss" scoped>
 .about {
+  max-width: 1200px;
   padding: 100px 100px;
   h1 {
     font-size: 3.4rem;
