@@ -90,4 +90,26 @@ export default {
     border-radius: 50%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 100px 50px;
+    dispay: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 3.0rem;
+      .btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+      }
+    }
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+}
 </style>

@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col>
-        <v-card class="mx-auto" max-width="344">
+        <v-card class="mx-auto works" max-width="344">
           <div class="margin">
           </div>
           <v-img src="https://fightingsou.github.io/images/works.png" height="270px" cover></v-img>
@@ -187,6 +187,17 @@ export default {
   a {
     text-decoration: none;
     color: #3f51b5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .v-card {
+    margin-top: 0;
+    width: 260px;
+    height: 280px;
+  }
+  .works {
+    margin-top: 20px;
   }
 }
 </style>

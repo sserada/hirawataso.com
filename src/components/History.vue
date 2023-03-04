@@ -1,5 +1,5 @@
 <template>
-  <v-timeline direction="horizontal">
+  <v-timeline class="hidden-sm-and-down" direction="horizontal">
     <v-timeline-item>
       <template v-slot:opposite>
         ~2020
