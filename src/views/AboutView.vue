@@ -54,7 +54,7 @@ export default {
     color: #A7A7A7;
     font-size: 5.5rem;
     font-weight: 700;
-    margin-top: 60px;
+    margin-top: 30px;
     width: 100%;
   }
   p {
