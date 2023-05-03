@@ -83,23 +83,24 @@ export default {
 
 @media screen and (max-width: 768px) {
   .about {
-    padding: 100px 50px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     h1 {
+      margin-top: 30px;
       font-size: 3.0rem;
-      .btn {
-        width: 50px;
-        height: 50px;
-        font-size: 1rem;
-      }
     }
-  }
-  img {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
+    p {
+      margin-top: 0;
+      font-size: 0.8rem;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      margin-top: 40px;
+      margin-left: 0px;
+    }
   }
 }
 </style>
