@@ -2,47 +2,45 @@
   <Header />
   <v-container class="about">
     <h1>
-      <span>So</span> Hirawata
-      <v-btn class="btn github" href="https://github.com/fightingsou" target="_blank">
-        <v-icon>mdi-github</v-icon>
-      </v-btn>
-      <v-btn class="btn twitter" href="https://twitter.com/fightingsou" target="_blank">
-        <v-icon>mdi-twitter</v-icon>
-      </v-btn>
+      So Hirawata
     </h1>
     <v-row>
-      <v-col sm="3">
-        <img src="@/assets/img/myface.jpg" alt="myface" />
+      <v-col cols="12" md="5">
+        <img src="../assets/img/my-face.png" alt="so" />
       </v-col>
-      <v-col sm="9">
+      <v-col cols="12" md="7">
         <p>
-          This is my face 18 years ago. Where has the cuteness of those days gone?
-          <br>
-          I am now a junior at the university.
-          In university, I majored in computer science and am doing research on automatic composition.
-          I also enjoy competitive programming and web development.
+          東京都市大学メディア情報学部4年生．修士課程進学予定．
+          <br />
+          自動作曲に関する研究をしています．
+          <br />
+          <br />
+          2018年4月 ~ 2020年3月 日本大学藤沢高等学校
+          <br />
+          2020年4月 ~ 現在 東京都市大学 メディア情報学部 情報システム学科
+          <br />
+          2022年9月 ~ 現在 株式会社SQIP アルバイト
+          <br />
+          <br />
+          GitHub : <a href="https://github.com/fightingsou">fightingsou</a>
+          <br />
+          Twitter : <a href="https://twitter.com/fightingsou">fightingsou</a>
         </p>
       </v-col>
     </v-row>
-    <History />
-    <Works />
   </v-container>
   <Footer />
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
-import History from '@/components/History.vue'
 import Footer from '@/components/Footer.vue'
-import Works from '@/components/Works.vue'
 
 export default {
   name: 'About',
   components: {
     Header,
-    History,
     Footer,
-    Works
   }
 }
 </script>
@@ -50,51 +48,43 @@ export default {
 <style lang="scss" scoped>
 .about {
   max-width: 1200px;
+  height: 90%;
   padding: 100px 100px;
   h1 {
-    font-size: 3.4rem;
+    color: #A7A7A7;
+    font-size: 5.5rem;
     font-weight: 700;
-    margin-bottom: 40px;
-    span {
-      color: #ff4081;
-    }
-    .btn {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      font-size: 1.2rem;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0);
-      transition: all 0.3s;
-      &:hover {
-        background-color: #ff4081;
-        color: #fff;
-      }
-      &.github {
-        color: #333;
-      }
-      &.twitter {
-        color: #1da1f2;
-      }
-    }
+    margin-top: 60px;
+    width: 100%;
   }
   p {
-    font-size: 1.3rem;
-    font-weight: 300;
+    font-size: 1.0rem;
     font-family: 'Playfair Display', serif;
     color: #666;
-    margin-top: 40px;
+    margin-top: 80px;
+  }
+  a {
+    color: #666;
+    text-decoration: none;
+    &:hover {
+      color: #666;
+      text-decoration: underline;
+    }
   }
   img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
+    margin-top: 40px;
+    margin-left: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 }
 
 @media screen and (max-width: 768px) {
   .about {
     padding: 100px 50px;
-    dispay: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     h1 {
