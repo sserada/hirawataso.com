@@ -8,19 +8,14 @@
           I'm So Hirawata, a university student in Japan.
         </p>
         <p>
-          Here is my portfolio site. Have a look around!
+          Here is my portfolio site.
         </p>
-        <div class="btns">
-          <v-btn class="btn github" href="https://github.com/fightingsou" target="_blank">
-            <v-icon>mdi-github</v-icon>
-          </v-btn>
-          <v-btn class="btn twitter" href="https://twitter.com/fightingsou" target="_blank">
-            <v-icon>mdi-twitter</v-icon>
-          </v-btn>
-        </div>
+        <p>
+          Have a look around!
+        </p>
       </v-col>
       <v-col>
-        <img src="@/assets/img/profile.png" alt="Sou Hirawata">
+        <img src="@/assets/img/my-face.png" alt="Sou Hirawata">
       </v-col>
     </v-row>
   </v-container>
@@ -57,21 +52,25 @@ export default defineComponent({
       justify-content: center;
       align-items: center;
       img {
-        width: 500px;
-        height: 500px;
+        width: 100%;
         border-radius: 50%;
-        margin-bottom: 20px;
+        margin-right: 100px;
       }
       h1 {
-        font-size: 5rem;
+        z-index: 1;
+        color: #A7A7A7;
+        font-size: 6rem;
+        margin-left: 100px;
         .period {
-          color: #ff4081;
+          color: #888;
         }
       }
       p {
+        z-index: 1;
         color: #666;
-        font-size: 1.1rem;
+        font-size: 1.0rem;
         font-family: 'Playfair Display', serif;
+        margin-left: 100px;
       }
       .btn {
         box-shadow: 0 0 0 0;
@@ -96,21 +95,22 @@ export default defineComponent({
 
 @media screen and (max-width: 768px) {
   .v-container {
+    max-width: 500px;
+    max-height: 1000px;
     .v-row {
       flex-direction: column-reverse;
       position: relative;
       .v-col {
         img {
           position: absolute;
-          top: 70px;
-          width: 350px;
-          height: 350px;
+          top: 50px;
+          width: 80%;
         }
         h1 {
           font-size: 3rem;
         }
         p {
-          font-size: 1rem;
+          font-size: 0.8rem;
           max-width: 250px;
         }
         .btn {

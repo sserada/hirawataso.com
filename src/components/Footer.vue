@@ -1,7 +1,6 @@
 <template>
   <div class="footer">
-    <span>Written by </span>
-    <a href="https://github.com/fightingsou">Sou Hirawata</a>
+    <a href="https://github.com/fightingsou">So Hirawata</a>
     <span> © 2023. </span>
   </div>
 </template>
