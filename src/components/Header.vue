@@ -2,6 +2,7 @@
   <div class="header">
     <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
+    <router-link to="/Blog">Blog</router-link>
   </div>
 </template>
 
@@ -24,12 +25,13 @@ export default {
   align-items: center;
   justify-content: center;
   a {
-    color: #333;
+    color: #A7A7A7;
     text-decoration: none;
-    margin: 0 30px;
+    margin: 80px 30px;
+    font-size: 18px;
 
     &:hover {
-      color: #ff4081;
+      color: #666;
       transition: all 0.3s ease;
     }
   }

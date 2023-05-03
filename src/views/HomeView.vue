@@ -39,11 +39,11 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .v-container {
-  max-width: 1000px;
+  max-width: 1300px;
   height: 95%;
   text-align: center;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 100px;
   .v-row {
     height: 100%;
     .v-col {
@@ -54,13 +54,13 @@ export default defineComponent({
       img {
         width: 100%;
         border-radius: 50%;
-        margin-right: 100px;
+        margin-right: 220px;
       }
       h1 {
         z-index: 1;
         color: #A7A7A7;
-        font-size: 6rem;
-        margin-left: 100px;
+        font-size: 7rem;
+        margin-left: 140px;
         .period {
           color: #888;
         }
@@ -68,9 +68,9 @@ export default defineComponent({
       p {
         z-index: 1;
         color: #666;
-        font-size: 1.0rem;
+        font-size: 1.2rem;
         font-family: 'Playfair Display', serif;
-        margin-left: 100px;
+        margin-left: 140px;
       }
       .btn {
         box-shadow: 0 0 0 0;
@@ -105,13 +105,16 @@ export default defineComponent({
           position: absolute;
           top: 50px;
           width: 80%;
+          margin: 0;
         }
         h1 {
           font-size: 3rem;
+          margin: 0;
         }
         p {
           font-size: 0.8rem;
           max-width: 250px;
+          margin: 0;
         }
         .btn {
           width: 40px;
