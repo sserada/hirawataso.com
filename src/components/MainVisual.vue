@@ -60,6 +60,8 @@ export default {
 
   #svg-container svg {
     background-color: #111;
+    max-width: 100%;
+    max-height: 100%;
     height: 100%;
     margin-top: 25%;
   }
@@ -72,10 +74,10 @@ export default {
 
   @media (max-width: 600px) {
     #svg-container svg {
-      max-width: 100%;
-      max-height: 100%;
+      max-height: 60%;
+      max-height: 60%;
       object-fit: contain;
-      margin-top: 70%;
+      margin-top: 55%;
     }
   }
 </style>

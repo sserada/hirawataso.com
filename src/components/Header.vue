@@ -1,45 +1,125 @@
 <template>
-  <header>
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Works</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </header>
+  <div>
+    <header>
+      <div class="menu-icon" @click="toggleMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul :class="{ open: menuOpen }">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+  </div>
 </template>
 
-<style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+<script>
+export default {
+  data() {
+    return {
+      menuOpen: false
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.menuOpen = !this.menuOpen;
+    }
+  }
+};
+</script>
 
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+header {
+  position: relative;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 30px;
+  height: 3px;
+  background-color: #eee;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+ul {
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Great Vibes', cursive;
+  font-size: 24px;
+  color: #eee;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: #ff6347;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
   header {
-    position: absolute;
-    margin-top: 10px;
-    right: 0;
-    padding: 10px 50px;
+    padding: 20px;
+  }
+
+  .menu-icon {
+    display: flex;
+    opacity: 0.7;
+    z-index: 10;
   }
 
   ul {
-    display: flex;
-    gap: 50px;
-    padding: 0;
-    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #222;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    z-index: 9;
+    overflow-y: auto;
+  }
+
+  ul.open {
+    transform: translateX(0);
   }
 
   li {
-    list-style: none;
+    text-align: center;
+    padding: 10px;
+  }
+
+  li:first-child {
+    margin-top: 100px;
   }
 
   a {
-    text-decoration: none;
-    font-family: 'Great Vibes', cursive;
     font-size: 24px;
-    color: #eee;
-    transition: color 0.3s ease, transform 0.3s ease;
   }
-
-  a:hover {
-    color: #ff6347;
-    transform: scale(1.1);
-  }
+}
 </style>
-
