@@ -1,50 +1,56 @@
-<template>
+8<template>
   <div id="scroll-down">
     <svg
       id="scroll-down-svg"
       xmlns="http://www.w3.org/2000/svg"
       width="64"
       height="64"
-      viewBox="0 0 100 100"
+      viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
+      stroke-width="0.5"
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <circle cx="50" cy="50" r="45"></circle>
-      <line x1="50" y1="30" x2="50" y2="70"></line>
-      <polyline points="35 55 50 70 65 55"></polyline>
+      <polyline points="6 9 12 15 18 9"></polyline>
     </svg>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { onMounted } from 'vue';
-import anime from 'animejs/lib/anime.es.js';
-
 onMounted(() => {
-  anime({
-    targets: '#scroll-down-svg line, #scroll-down-svg polyline',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutSine',
-    duration: 1000,
-    loop: true,
-    direction: 'alternate'
-  });
+  const svg = document.getElementById('scroll-down-svg');
+  svg?.classList.add('scroll-animation');
 });
 </script>
 
 <style scoped>
-  #scroll-down {
-    text-align: center;
-    margin-top: 100px;
-    opacity: 0.5;
-  }
+#scroll-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
 
-  svg {
-    display: block;
-    margin: 0 auto;
+#scroll-down-svg {
+  opacity: 0.5;
+  animation: scroll-down 2s infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
+    opacity: 0.2;
   }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.2;
+  }
+}
 </style>
 

@@ -1,5 +1,6 @@
 <template>
   <div id="container">
+    <Header />
     <div id="main-vis">
       <MainVisual />
       <ScrollDown />
