@@ -7,10 +7,10 @@
         <span></span>
       </div>
       <ul :class="{ open: menuOpen }">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Works</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </header>
   </div>
@@ -35,11 +35,13 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 header {
-  position: relative;
+  position: fixed;
   padding: 20px 100px;
   display: flex;
+  width: 100%;
   justify-content: flex-end;
   align-items: center;
+  z-index: 100;
 }
 
 .menu-icon {

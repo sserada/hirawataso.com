@@ -59,11 +59,10 @@ export default {
   }
 
   #svg-container svg {
-    background-color: #111;
     max-width: 100%;
     max-height: 100%;
     height: 100%;
-    margin-top: 25%;
+    margin-top: 30%;
   }
 
   .cls-1 {
@@ -77,7 +76,7 @@ export default {
       max-height: 60%;
       max-height: 60%;
       object-fit: contain;
-      margin-top: 55%;
+      margin-top: 65%;
     }
   }
 </style>

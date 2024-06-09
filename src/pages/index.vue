@@ -3,7 +3,11 @@
     <Header />
     <div id="main-vis">
       <MainVisual />
-      <ScrollDown />
+      <ScrollDown id="scroll-down" />
+    </div>
+    <a id="about" />
+    <div id="about-view">
+      <AboutView />
     </div>
   </div>
 </template>
@@ -12,17 +16,33 @@
 </script>
 
 <style>
+  html {
+    scroll-behavior: smooth;
+  }
+
   #container {
-    height: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
     text-align: center;
   }
 
   #main-vis {
+    position: relative;
     text-align: center;
     max-width: 1200px;
-    height: auto;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #scroll-down {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+  }
+
+  #about-view {
+    height: 100vh;
   }
 
   @media (max-width: 1024px) {
