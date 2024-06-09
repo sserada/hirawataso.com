@@ -8,7 +8,7 @@
       </div>
       <ul :class="{ open: menuOpen }">
         <li><a href="#about">About</a></li>
-        <li><a href="#works">Works</a></li>
+        <li><a href="#achieves">Achievements</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>

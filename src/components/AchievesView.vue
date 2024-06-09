@@ -3,20 +3,20 @@
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
   export default {
-    name: 'AboutPage',
+    name: 'AchievesPage',
     mounted() {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             anime({
-              targets: '#about-container',
+              targets: '#achieves-container',
               opacity: [0, 1],
               duration: 1000,
               easing: 'easeInOutQuad'
             });
           } else {
             anime({
-              targets: '#about-container',
+              targets: '#achieves-container',
               opacity: [1, 0],
               duration: 1000,
               easing: 'easeInOutQuad'
@@ -31,24 +31,15 @@
 </script>
 
 <template>
-  <div id="about-container">
-    <div id="about-header">
-      <h1>About</h1>
+  <div id="achieves-container">
+    <div id="achieves-header">
+      <h1>Achievements</h1>
     </div>
-    <div id="about-content">
-      <div>
-        <h2>平綿 素望 <span>So Hirawata</span></h2>
-        <p>東京都市大学大学院 環境情報学研究科 環境情報学専攻 1年</p>
-        <p>海洋研究開発機構 付加価値情報創生部門 地球情報科学センター 臨時研究補助員</p>
-        <p class="en">Student at Tokyo City University</p>
-        <p>Research Assistant at Japan Agency for Marine-Earth Science and Technology</p>
-        <div class="icons">
-          <a target="_brank" href="https://github.com/fightingso"><i class="fab fa-github"></i></a>
-          <a target="_brank" href="https://x.com/fightingsou"><i class="fab fa-twitter"></i></a>
-          <a target="_brank" href="https://instagram.com/hirawataso"><i class="fab fa-instagram"></i></a>
-
-        </div>
-      </div>
+    <div id="achieves-content">
+      <h2>Projects</h2>
+      <ProjectsView />
+      <h2>Publications</h2>
+      <h2>Presentations</h2>
     </div>
   </div>
 </template>
@@ -57,17 +48,17 @@
   @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
 
-  #about-container {
+  #achieves-container {
     height: 100%;
     opacity: 0;
   }
 
-  #about-header {
-    padding-top: 200px;
+  #achieves-header {
+    padding-top: 100px;
   }
 
-  #about-content {
-    width: 60%;
+  #achieves-content {
+    width: 90%;
     text-align: center;
     margin: 0 auto;
     height: auto;
@@ -81,9 +72,9 @@
   }
 
   h2 {
-    font-family: "Noto Serif JP", serif;
+    font-family: 'Great Vibes', cursive;
     font-size: 30px;
-    opacity: 0.8;
+    opacity: 0.6;
     margin-top: 40px;
     margin-bottom: 30px;
   }
@@ -114,21 +105,16 @@
     margin: 0 1vw;
   }
 
-  .icons a:hover {
-    color: #ff6347;
-    transition: 0.3s;
-  }
-
   @media (max-width: 768px) {
-    #about-container {
+    #achieves-container {
       padding: 0;
     }
 
-    #about-content {
+    #achieves-content {
       width: 80%;
     }
 
-    #about-header {
+    #achieves-header {
       padding-top: 40%;
     }
 

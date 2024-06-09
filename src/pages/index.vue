@@ -9,6 +9,10 @@
     <div id="about-view">
       <AboutView />
     </div>
+    <a id="achieves" />
+    <div id="achieves-view">
+      <AchievesView />
+    </div>
   </div>
 </template>
 
@@ -42,6 +46,10 @@
   }
 
   #about-view {
+    height: 100vh;
+  }
+
+  #achieves-view {
     height: 100vh;
   }
 
