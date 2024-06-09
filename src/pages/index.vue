@@ -14,6 +14,10 @@
     <div id="achieves-view">
       <AchievesView />
     </div>
+    <a id="blog" />
+    <div id="blog-view">
+      <BlogView />
+    </div>
   </div>
 </template>
 
@@ -52,6 +56,10 @@
 
   #achieves-view {
     height: auto;
+  }
+
+  #blog-view {
+    height: 100vh;
   }
 
   @media (max-width: 1024px) {
