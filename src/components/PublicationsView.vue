@@ -4,7 +4,7 @@
       <ul>
         <li class="list-item" v-for="(publication, index) in publications" :key="index">
           <h3>{{ publication.title }}</h3>
-          <p>{{ publication.authors }}</p>
+          <p class="authors">{{ publication.authors }}</p>
           <p>{{ publication.journal }}</p>
         </li>
       </ul>
@@ -87,6 +87,25 @@ export default {
     font-weight: 400;
     color: #ccc;
     margin: 0;
+  }
+
+  .authors {
+    opacity: 0.7;
+  }
+
+  @media (max-width: 768px) {
+    #publications-container {
+      max-width: 100%;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 12px;
+    }
   }
 </style>
 

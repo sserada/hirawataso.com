@@ -12,6 +12,7 @@ declare module 'vue' {
     Header: typeof import('./src/components/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     MainVisual: typeof import('./src/components/MainVisual.vue')['default']
+    PresentationsView: typeof import('./src/components/PresentationsView.vue')['default']
     ProjectsView: typeof import('./src/components/ProjectsView.vue')['default']
     PublicationsView: typeof import('./src/components/PublicationsView.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

@@ -1,5 +1,6 @@
 <template>
   <div id="container">
+    <a id="home" />
     <Header />
     <div id="main-vis">
       <MainVisual />
@@ -50,7 +51,7 @@
   }
 
   #achieves-view {
-    height: 100vh;
+    height: auto;
   }
 
   @media (max-width: 1024px) {

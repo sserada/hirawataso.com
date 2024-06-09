@@ -41,6 +41,7 @@
       <h2>Publications</h2>
       <PublicationsView />
       <h2>Presentations</h2>
+      <PresentationsView />
     </div>
   </div>
 </template>
@@ -50,7 +51,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
 
   #achieves-container {
-    height: 100%;
     opacity: 0;
   }
 
@@ -112,7 +112,7 @@
     }
 
     #achieves-content {
-      width: 80%;
+      width: 100%;
     }
 
     #achieves-header {
