@@ -39,6 +39,7 @@
       <h2>Projects</h2>
       <ProjectsView />
       <h2>Publications</h2>
+      <PublicationsView />
       <h2>Presentations</h2>
     </div>
   </div>
