@@ -1,6 +1,5 @@
 <script>
   import anime from 'animejs/lib/anime.es.js';
-  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
   export default {
     name: 'BlogPage',

@@ -44,6 +44,7 @@ header {
   width: 100%;
   justify-content: flex-end;
   align-items: center;
+  max-width: 2000px;
   z-index: 100;
 }
 
