@@ -118,6 +118,12 @@
     transition: 0.3s;
   }
 
+  @media (min-width: 1000px) and (min-height: 1500px) {
+    #about-header {
+      padding-top: 50%;
+    }
+  }
+
   @media (max-width: 768px) {
     #about-container {
       padding: 0;

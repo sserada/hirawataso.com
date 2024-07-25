@@ -11,7 +11,7 @@
             <v-card-text class="text">
               東京都市大学で開講される講義"SD PBL"が総合知滋養にどのように役立っているのか，学生の視点からお話ししました．<br />
             </v-card-text>
-            <a class="url" target="_blank" href="https://www.tcu.ac.jp/news/all/20240502-56975/">News</a>
+            <a class="url" target="_blank" href="https://www.tcu.ac.jp/news/all/20240628-58059/">News</a>
           </v-card>
         </v-col>
 

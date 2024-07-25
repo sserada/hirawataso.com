@@ -56,6 +56,7 @@ export default {
     height: auto;
     max-width: 100%;
     opacity: 0.7;
+    margin: 0 auto;
   }
 
   #svg-container svg {
@@ -69,6 +70,16 @@ export default {
     fill: none;
     stroke: #eee;
     stroke-width: 1.5px;
+  }
+
+  @media (min-width: 1000px) and (min-height: 1500px) {
+    #svg-container {
+      width: 80%;
+    }
+
+    #svg-container svg {
+      margin-top: 70%;
+    }
   }
 
   @media (max-width: 600px) {

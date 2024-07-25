@@ -28,6 +28,11 @@ export default {
           journal: '東京都市大学横浜キャンパス情報メディアジャーナル (25) 11-19 2024年3月',
         },
         {
+          title: '自動作曲技術に基づくコーヒー抽出時の感性デザイン',
+          authors: '大谷紀子, 平綿素望, 岡部大介',
+          journal: '人工知能学会全国大会（第37回） 2023年6月 '
+        },
+        {
           title: 'Automatic Music Composition System to Enjoy Brewing Delicious Coffee',
           authors: 'Noriko Otani, So Hirawata, Daisuke Okabe',
           journal: 'Proceedings of the 16th International Symposium on Computer Music Multidisciplinary Research 736-739 2023年11月',
